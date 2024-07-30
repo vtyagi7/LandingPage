@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+@layer utilities {
+  
+  .max-container {
+    @apply mx-auto max-w-[1440px];
+  }
+
+  .padding-container {
+    @apply px-6 lg:px-20 3xl:px-0 xs:px-2;
+  } 
+  .padding-container-y{
+    @apply py-6 lg:py-20 3xl:py-0 ;
+  }
+
+  .gap-screen{
+    @apply lg:gap-x-4 3xl:gap-x-0 xs:gap-x-0;
+  }
+
+  .padding-screen{
+    @apply lg:p-6 3xl:p-0 xs:p-1 ;
+  }
+
+  .card-image{
+    @apply w-[70px] bg-[#FFF7E5] rounded-full p-2;
+  }
+
+ /* FONTS */
+  .bold-72 {
+    @apply text-[72px] font-[700] leading-none;
+  }
+
+  .bold-64{
+    @apply text-[64px] font-[700] leading-none;
+  }
+
+  .bold-48 {
+    @apply text-[48px] font-[700] leading-none;
+  }
+
+  .bold-30 {
+    @apply text-[30px] font-[700] leading-none;
+  } 
+
+  .bold-40 {
+    @apply text-[40px] font-[700] leading-none;
+  } 
+  .bold-36 {
+    @apply text-[36px] font-[700] leading-none;
+  } 
+
+  .bold-24 {
+    @apply text-[24px] font-[700] leading-none;
+  } 
+  .bold-28 {
+    @apply text-[28px] font-[700] leading-none;
+  } 
+  .bold-18 {
+    @apply text-[18px] font-[700] leading-none;
+  }
+  .bold-16 {
+    @apply text-[16px] font-[700] leading-none;
+  }
+  .bold-12 {
+    @apply text-[12px] font-[700] leading-none;
+  }
+  .bold-20 {
+    @apply text-[20px] font-[700] leading-none;
+  } 
+  .medium-30 {
+    @apply text-[30px] font-[500] leading-none;
+  }
+  .medium-20 {
+    @apply text-[20px] font-[500] leading-none;
+  }
+
+  .medium-24 {
+    @apply text-[24px] font-[500] leading-none;
+  }
+  
+  .regular-18 {
+    @apply text-[18px] font-[400] leading-none;
+  }
+
+  .regular-16 {
+    @apply text-[16px] font-[400] leading-none;
+  }
+  .regular-14 {
+    @apply text-[14px] font-[400] leading-none;
+  }
+  .medium-14 {
+    @apply text-[14px] font-[500] leading-none;
+  }
+  .medium-12 {
+    @apply text-[12px] font-[500] leading-none;
+  }
+
+  .medium-10 {
+    @apply text-[10px] font-[500] leading-none;
+  }
+  .medium-18 {
+    @apply text-[18px] font-[500] leading-none;
+  }
+  .medium-16 {
+    @apply text-[16px] font-[500] leading-none;
+  }
+
+  .regular-12 {
+    @apply text-[12px] font-[400] leading-none;
+  }
+  .regular-10 {
+    @apply text-[10px] font-[400] leading-none;
+  }
+
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
